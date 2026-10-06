@@ -224,6 +224,14 @@ describe('Documentation', function () {
         expect($readme)->not->toContain('<a ');
     });
 
+    it('states that the package is independent of the brands it names', function () {
+        $readme = file_get_contents($this->pluginPath.'/README.md');
+
+        expect($readme)->toContain('vipertecpro is an independent developer.')
+            ->toContain('this package is not affiliated with or endorsed by them.')
+            ->not->toMatch('/\\b(official|certified|partner)\\b/i');
+    });
+
     it('lists the 1.0.0 release in the changelog', function () {
         expect(file_get_contents($this->pluginPath.'/CHANGELOG.md'))->toContain('## [1.0.0]');
     });
