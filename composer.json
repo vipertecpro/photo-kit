@@ -10,7 +10,22 @@
         }
     ],
     "homepage": "https://github.com/vipertecpro/photo-kit",
-    "keywords": ["nativephp", "mobile", "photos", "photo-library", "camera-roll", "compress", "resize", "exif", "image", "video"],
+    "support": {
+        "issues": "https://github.com/vipertecpro/photo-kit/issues",
+        "source": "https://github.com/vipertecpro/photo-kit"
+    },
+    "keywords": [
+        "nativephp",
+        "mobile",
+        "photos",
+        "photo-library",
+        "camera-roll",
+        "compress",
+        "resize",
+        "exif",
+        "image",
+        "video"
+    ],
     "require": {
         "php": "^8.4",
         "nativephp/mobile": "^4.0"

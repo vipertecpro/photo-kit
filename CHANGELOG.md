@@ -4,7 +4,7 @@ All notable changes to `vipertecpro/photo-kit` are documented here.
 The format is based on Keep a Changelog, and this project adheres to
 Semantic Versioning.
 
-## [1.0.0] - 2026-10-06
+## [1.0.0] - 2026-10-07
 
 First release. Verified on the iOS Simulator (iPhone 17 Pro, iOS 26.5) and an
 Android emulator (Pixel 9, API 36) against NativePHP Mobile 4.6.
