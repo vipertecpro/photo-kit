@@ -1,0 +1,108 @@
+{
+    "name": "vipertecpro/photo-kit",
+    "version": "1.0.0",
+    "description": "Save images and videos to the photo library with proper permission prompts, compress and resize images, and read or fix EXIF orientation — hand-written Swift and Kotlin behind one PHP API. No third-party libraries.",
+    "namespace": "PhotoKit",
+    "keywords": [
+        "photos",
+        "photo-library",
+        "camera-roll",
+        "gallery",
+        "save",
+        "compress",
+        "resize",
+        "exif",
+        "orientation",
+        "image",
+        "video"
+    ],
+    "category": "media",
+    "license": "MIT",
+    "pricing": {
+        "type": "free"
+    },
+    "author": {
+        "name": "vipertecpro",
+        "email": "vipertecpro@gmail.com",
+        "url": "https://github.com/vipertecpro"
+    },
+    "homepage": "https://github.com/vipertecpro/photo-kit",
+    "repository": "https://github.com/vipertecpro/photo-kit",
+    "funding": [],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "icon": "resources/icon.png",
+    "bridge_functions": [
+        {
+            "name": "PhotoKit.Save",
+            "android": "com.vipertecpro.plugins.photo_kit.PhotoKitFunctions.Save",
+            "ios": "PhotoKitFunctions.Save",
+            "description": "Save an image or video file to the photo library (asks for permission first) and report the result via an event"
+        },
+        {
+            "name": "PhotoKit.PermissionStatus",
+            "android": "com.vipertecpro.plugins.photo_kit.PhotoKitFunctions.PermissionStatus",
+            "ios": "PhotoKitFunctions.PermissionStatus",
+            "description": "Return the current photo-library permission status without prompting"
+        },
+        {
+            "name": "PhotoKit.RequestPermission",
+            "android": "com.vipertecpro.plugins.photo_kit.PhotoKitFunctions.RequestPermission",
+            "ios": "PhotoKitFunctions.RequestPermission",
+            "description": "Show the photo-library permission prompt and report the outcome via an event"
+        },
+        {
+            "name": "PhotoKit.Process",
+            "android": "com.vipertecpro.plugins.photo_kit.PhotoKitFunctions.Process",
+            "ios": "PhotoKitFunctions.Process",
+            "params": ["context"],
+            "description": "Resize, compress and re-encode an image, baking its EXIF orientation into the pixels; returns the new file"
+        },
+        {
+            "name": "PhotoKit.ReadExif",
+            "android": "com.vipertecpro.plugins.photo_kit.PhotoKitFunctions.ReadExif",
+            "ios": "PhotoKitFunctions.ReadExif",
+            "params": ["context"],
+            "description": "Read the dimensions, EXIF orientation, camera, date and GPS tags of an image"
+        }
+    ],
+    "android": {
+        "min_version": 29,
+        "permissions": [],
+        "repositories": [],
+        "dependencies": {
+            "implementation": []
+        },
+        "activities": [],
+        "services": [],
+        "receivers": [],
+        "providers": []
+    },
+    "ios": {
+        "min_version": "15.0",
+        "info_plist": {
+            "NSPhotoLibraryAddUsageDescription": "Used to save the photos and videos you choose to your photo library.",
+            "NSPhotoLibraryUsageDescription": "Used to add the photos and videos you save to an album in your photo library."
+        },
+        "dependencies": {
+            "swift_packages": [],
+            "pods": []
+        }
+    },
+    "assets": {
+        "android": [],
+        "ios": []
+    },
+    "secrets": [],
+    "events": [
+        "Vipertecpro\\PhotoKit\\Events\\PhotoSaved",
+        "Vipertecpro\\PhotoKit\\Events\\PhotoSaveFailed",
+        "Vipertecpro\\PhotoKit\\Events\\PhotoLibraryPermissionResult"
+    ],
+    "service_provider": "Vipertecpro\\PhotoKit\\PhotoKitServiceProvider",
+    "hooks": {
+        "copy_assets": "nativephp:photo-kit:copy-assets"
+    }
+}

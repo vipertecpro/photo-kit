@@ -1,0 +1,51 @@
+{
+    "name": "vipertecpro/photo-kit",
+    "description": "Save images and videos to the photo library, compress, resize and fix EXIF orientation — native, hand-written, for NativePHP Mobile.",
+    "type": "nativephp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vipertecpro",
+            "email": "vipertecpro@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/vipertecpro/photo-kit",
+    "keywords": ["nativephp", "mobile", "photos", "photo-library", "camera-roll", "compress", "resize", "exif", "image", "video"],
+    "require": {
+        "php": "^8.4",
+        "nativephp/mobile": "^4.0"
+    },
+    "suggest": {
+        "nativephp/mobile-camera": "Pick or capture the photo you want to save, compress or resize.",
+        "vipertecpro/image-cropper": "Crop or edit an image natively before saving it to the photo library."
+    },
+    "autoload": {
+        "psr-4": {
+            "Vipertecpro\\PhotoKit\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vipertecpro\\PhotoKit\\PhotoKitServiceProvider"
+            ]
+        },
+        "nativephp": {
+            "manifest": "nativephp.json"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0|^4.0",
+        "laravel/framework": "^12.0|^13.0"
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
