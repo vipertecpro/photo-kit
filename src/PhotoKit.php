@@ -85,12 +85,12 @@ class PhotoKit
      *
      * @param  string  $path  Absolute path to a local image or video file.
      * @param  array{type?: string, album?: string, id?: string}  $options
-     *                `type`: `image` or `video` (default: by extension).
-     *                `album`: album / folder name. On Android this is the
-     *                sub-folder under Pictures or Movies; on iOS the photo
-     *                is also added to an album of that name, which needs
-     *                full photo-library access instead of add-only access.
-     *                `id`: correlation id echoed back on the result event.
+     *                                                                      `type`: `image` or `video` (default: by extension).
+     *                                                                      `album`: album / folder name. On Android this is the
+     *                                                                      sub-folder under Pictures or Movies; on iOS the photo
+     *                                                                      is also added to an album of that name, which needs
+     *                                                                      full photo-library access instead of add-only access.
+     *                                                                      `id`: correlation id echoed back on the result event.
      *
      * Fires {@see PhotoSaved} or {@see PhotoSaveFailed}.
      *
@@ -191,7 +191,7 @@ class PhotoKit
      *     with the orientation reset to 1. Default false, which strips them —
      *     the privacy-friendly default for uploads.
      * @return array{path: string, width: int, height: int, bytes: int, format: string, originalWidth: int, originalHeight: int, originalBytes: int, orientation: int}
-     *                Empty outside a native app.
+     *                                                                                                                                                                 Empty outside a native app.
      *
      * @throws InvalidArgumentException For a missing file or a bad option.
      * @throws PhotoKitException When the native side cannot decode or encode the image.
