@@ -1,4 +1,4 @@
-# Photo Kit — save, compress, resize and fix photos natively in NativePHP Mobile
+# Photo Kit for NativePHP — save, compress, resize and fix photos natively
 
 Save images and videos to the user's **photo library** with the right
 permission prompt, **compress** and **resize** images on the device, **read
@@ -301,6 +301,6 @@ See the `CHANGELOG.md` file included with the package for the full version histo
 
 MIT — see the `LICENSE` file included with the package.
 
-vipertecpro is an independent developer. NativePHP, Laravel, Apple, Google, Firebase and other names are trademarks of their respective owners; this package is not affiliated with or endorsed by them.
+vipertecpro is an independent developer. NativePHP, Laravel, Apple, Google, Firebase and other names are trademarks of their respective owners; this package is not affiliated with or endorsed by them. iOS and Apple are trademarks of Apple Inc. Android, Google Play and Firebase are trademarks of Google LLC.
 
-Photo Kit is a free plugin from vipertecpro.com, home of the paid plugins for NativePHP Mobile: Rich-Text Editor, Onboarding & Tours, Health Kit and Native Charts.
+Photo Kit is a free plugin from vipertecpro.com, home of the paid plugins for NativePHP Mobile: Rich-Text Editor, Onboarding & Tours, Health Data and Native Charts.
