@@ -13,15 +13,15 @@ to shrink it for upload or save it to the camera roll.
 
 ## Features
 
-- 💾 **Save to Photos / Gallery** — images and videos, optionally into a named album, with permission prompts handled for you
-- 🔐 **Permission aware** — read the status first, ask only when needed; add-only access on iOS by default
-- 🗜️ **Compress** — re-encode at a quality to cut upload sizes
-- 📐 **Resize** — fit an image into a bounding box, never upscaled, aspect ratio kept
-- 🔄 **EXIF orientation fixed for good** — every processed image is upright in the pixels, not just in a tag
-- 🏷️ **EXIF reader** — dimensions, orientation, camera, date, exposure, GPS — same keys on both platforms
-- 📣 **Events, not polling** — `PhotoSaved`, `PhotoSaveFailed`, `PhotoLibraryPermissionResult`
-- 📦 **Zero dependencies** — no third-party native libraries, no network
-- 📱 **iOS + Android** behind one PHP API
+- **Save to Photos / Gallery** — images and videos, optionally into a named album, with permission prompts handled for you
+- **Permission aware** — read the status first, ask only when needed; add-only access on iOS by default
+- **Compress** — re-encode at a quality to cut upload sizes
+- **Resize** — fit an image into a bounding box, never upscaled, aspect ratio kept
+- **EXIF orientation fixed for good** — every processed image is upright in the pixels, not just in a tag
+- **EXIF reader** — dimensions, orientation, camera, date, exposure, GPS — same keys on both platforms
+- **Events, not polling** — `PhotoSaved`, `PhotoSaveFailed`, `PhotoLibraryPermissionResult`
+- **Zero dependencies** — no third-party native libraries, no network
+- **iOS + Android** behind one PHP API
 
 ## Requirements
 
@@ -297,7 +297,7 @@ with the package for local setup, the project layout and how it works.
 
 See the `CHANGELOG.md` file included with the package for the full version history.
 
-## License
+## Licence
 
 MIT — see the `LICENSE` file included with the package.
 
