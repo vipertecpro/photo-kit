@@ -252,6 +252,49 @@ and reports through the native events — subscribe with the `#nativephp` `On()`
 helper; `process()` and `exif()` return their result directly. See the file
 header for an example.
 
+## What you can build
+
+Photo Kit is a building block: saving to the photo library, compressing, resizing,
+fixing orientation and reading EXIF are done, and the product around them is
+yours. These ideas sit comfortably inside store policy as long as the person
+chooses the photos, knows when one is saved or uploaded, and is not surprised by
+what leaves the device. Photo Kit works on local files; picking or capturing a
+photo, and uploading the result, are yours.
+
+**Camera and upload apps**
+
+- **Lighter uploads for marketplace and classifieds apps.** `process()` shrinks a
+  3 MB camera photo to a 1600-pixel JPEG before upload, so listings load fast and
+  data plans last longer.
+- **Profile and avatar uploads.** Resize to a small thumbnail with `resize()`,
+  crop it first with Image Cropper if you want a round avatar, and upload the
+  result to your own server.
+- **Sideways photos fixed for good.** `fixOrientation()` writes the rotation into
+  the pixels, so photos look right on a server or in a web view that ignores EXIF.
+
+**Work and field apps**
+
+- **Inspection, site and delivery photos.** Save each photo to a named album such
+  as `Site visits` with `save($path, ['album' => ...])`, and upload a compressed
+  copy to your own backend.
+- **Receipts and expenses.** Compress a receipt photo for upload and keep a
+  copy in a `Receipts` album, but only with the person's knowledge.
+- **Real-estate and insurance photo reports.** Read `exif()` for the date taken
+  and the camera model to put in a report. Treat any GPS data as personal data.
+
+**Creative and community**
+
+- **Photo-journal and travel apps.** Save edited pictures to the gallery and read
+  the date taken to order entries.
+- **Photo sharing and social apps.** Strip camera and location tags before upload
+  (`keepMetadata` is off by default), so a shared picture does not give away where
+  someone lives.
+
+Storing, serving and moderating images needs your own backend. Read GPS only when
+the feature needs it and say so in your privacy policy. Photo Kit does not scrape
+other apps' galleries or watch the library; it saves, reads and processes files
+you give it. Explain why the app wants library access before the system prompt.
+
 ## Limitations
 
 - **Local files only.** Download remote media first (one line with `Http::sink()`).
