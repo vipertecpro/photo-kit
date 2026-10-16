@@ -1,5 +1,7 @@
 # Photo Kit for NativePHP — save, compress, resize and fix photos natively
 
+![Latest version](https://img.shields.io/packagist/v/vipertecpro/photo-kit) ![Tests](https://img.shields.io/github/actions/workflow/status/vipertecpro/photo-kit/tests.yml?branch=main&label=tests) ![PHP](https://img.shields.io/packagist/dependency-v/vipertecpro/photo-kit/php) ![NativePHP Mobile](https://img.shields.io/packagist/dependency-v/vipertecpro/photo-kit/nativephp%2Fmobile) ![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20Android-informational) ![Licence](https://img.shields.io/packagist/l/vipertecpro/photo-kit) ![Downloads](https://img.shields.io/packagist/dt/vipertecpro/photo-kit)
+
 Save images and videos to the user's **photo library** with the right
 permission prompt, **compress** and **resize** images on the device, **read
 EXIF** metadata and **fix the EXIF orientation** so photos stop showing up
